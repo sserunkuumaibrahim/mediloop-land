@@ -85,6 +85,11 @@ export default function CareersSection() {
                   </span>
                 </div>
               </Link>
+            )
+          })}
+        </div>
+
+        {/* Deadline callout */}
         <div className="bg-red-50 border border-red-200 rounded-xl px-5 py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
           <p className="text-sm text-red-700 font-medium">
             Application deadline: <span className="font-bold">May 15, 2025</span>. All programs start June 2025.
