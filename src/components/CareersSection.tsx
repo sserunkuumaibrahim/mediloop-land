@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { ArrowRight, Server, Code, Brain, Cloud, Monitor, Megaphone, TrendingUp, ClipboardList } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 
@@ -46,12 +47,12 @@ export default function CareersSection() {
               Help build Uganda's digital health infrastructure. {OPEN_ROLES.length} open roles across engineering, AI, marketing, and operations.
             </p>
           </div>
-          <a
+          <Link
             href="/careers"
             className="inline-flex items-center gap-2 border border-teal-600 text-teal-600 hover:bg-teal-50 px-5 py-2.5 rounded-lg font-semibold text-sm transition-colors shrink-0"
           >
             View All Roles <ArrowRight className="h-4 w-4" />
-          </a>
+          </Link>
         </div>
 
         {/* Role cards */}
@@ -60,7 +61,7 @@ export default function CareersSection() {
             const Icon = ICON_MAP[role.iconName] ?? Server
             const colors = ICON_COLORS[role.iconName] ?? { bg: 'bg-gray-100', text: 'text-gray-600' }
             return (
-              <a
+              <Link
                 key={role.slug}
                 href={`/careers/${role.slug}`}
                 className="group bg-white rounded-2xl border border-gray-200 p-5 hover:shadow-md hover:border-teal-200 transition-all"
@@ -83,22 +84,17 @@ export default function CareersSection() {
                     {role.department}
                   </span>
                 </div>
-              </a>
-            )
-          })}
-        </div>
-
-        {/* Deadline callout */}
+              </Link>
         <div className="bg-red-50 border border-red-200 rounded-xl px-5 py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
           <p className="text-sm text-red-700 font-medium">
             Application deadline: <span className="font-bold">May 15, 2025</span>. All programs start June 2025.
           </p>
-          <a
+          <Link
             href="/careers"
             className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg text-sm font-semibold transition-colors shrink-0"
           >
             Apply Now <ArrowRight className="h-3.5 w-3.5" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import Link from 'next/link'
 import { ArrowRight, Mail } from 'lucide-react'
 
 const TEAM = [
@@ -135,12 +136,12 @@ export default function TeamPage() {
                 <p className="text-gray-600 text-sm mb-4 leading-relaxed">
                   We are building the team that will digitalize healthcare for Uganda. Join us.
                 </p>
-                <a
+                <Link
                   href="/careers"
                   className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-500 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-colors"
                 >
                   See Open Roles <ArrowRight className="h-4 w-4" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -225,12 +226,12 @@ export default function TeamPage() {
             We are building the team that will digitalize healthcare for 45 million Ugandans. If that excites you, we want to hear from you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <Link
               href="/careers"
               className="inline-flex items-center justify-center gap-2 bg-white text-teal-700 hover:bg-gray-100 px-8 py-3.5 rounded-lg font-semibold transition-colors"
             >
               View Open Positions <ArrowRight className="h-4 w-4" />
-            </a>
+            </Link>
             <a
               href="mailto:info@mediloop.co"
               className="inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white/10 px-8 py-3.5 rounded-lg font-semibold transition-colors"

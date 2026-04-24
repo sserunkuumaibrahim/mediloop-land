@@ -31,11 +31,11 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             {/* Main navigation links for Mediloop's core pages */}
-            <a href="/about" className="text-gray-700 hover:text-gray-900 font-medium">About Us</a>
-            <a href="/platform" className="text-gray-700 hover:text-gray-900 font-medium">Platform</a>
-            <a href="/uhid" className="text-gray-700 hover:text-gray-900 font-medium">Universal Health ID</a>
-            <a href="/providers" className="text-gray-700 hover:text-gray-900 font-medium">Provider Network</a>
-            <a href="/services" className="text-gray-700 hover:text-gray-900 font-medium">Digital Services</a>
+            <Link href="/about" className="text-gray-700 hover:text-gray-900 font-medium">About Us</Link>
+            <Link href="/platform" className="text-gray-700 hover:text-gray-900 font-medium">Platform</Link>
+            <Link href="/uhid" className="text-gray-700 hover:text-gray-900 font-medium">Universal Health ID</Link>
+            <Link href="/providers" className="text-gray-700 hover:text-gray-900 font-medium">Provider Network</Link>
+            <Link href="/services" className="text-gray-700 hover:text-gray-900 font-medium">Digital Services</Link>
 
             <div className="relative group">
               <button className="flex items-center text-gray-700 hover:text-gray-900 font-medium">
@@ -45,11 +45,11 @@ export default function Header() {
                 <a href="https://developers.mediloop.co" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Developer Portal</a>
                 <a href="https://docs.mediloop.co" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">API Documentation</a>
                 <div className="border-t border-gray-200"></div>
-                <a href="/team" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Team</a>
-                <a href="/blog" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Blog</a>
-                <a href="/careers" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Careers</a>
-                <a href="/press" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Press</a>
-                <a href="/contact" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Contact</a>
+                <Link href="/team" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Team</Link>
+                <Link href="/blog" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Blog</Link>
+                <Link href="/careers" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Careers</Link>
+                <Link href="/press" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Press</Link>
+                <Link href="/contact" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Contact</Link>
               </div>
             </div>
           </nav>
@@ -73,21 +73,21 @@ export default function Header() {
         {mounted && isMenuOpen && (
           <div className="lg:hidden py-4 border-t border-gray-200">
             <div className="space-y-2">
-              <a href="/about" className="block py-2 text-gray-700 hover:text-gray-900 font-medium">About Us</a>
-              <a href="/platform" className="block py-2 text-gray-700 hover:text-gray-900 font-medium">Platform</a>
-              <a href="/uhid" className="block py-2 text-gray-700 hover:text-gray-900 font-medium">Universal Health ID</a>
-              <a href="/providers" className="block py-2 text-gray-700 hover:text-gray-900 font-medium">Provider Network</a>
-              <a href="/services" className="block py-2 text-gray-700 hover:text-gray-900 font-medium">Digital Services</a>
+              <Link href="/about" className="block py-2 text-gray-700 hover:text-gray-900 font-medium">About Us</Link>
+              <Link href="/platform" className="block py-2 text-gray-700 hover:text-gray-900 font-medium">Platform</Link>
+              <Link href="/uhid" className="block py-2 text-gray-700 hover:text-gray-900 font-medium">Universal Health ID</Link>
+              <Link href="/providers" className="block py-2 text-gray-700 hover:text-gray-900 font-medium">Provider Network</Link>
+              <Link href="/services" className="block py-2 text-gray-700 hover:text-gray-900 font-medium">Digital Services</Link>
               
               <div className="border-t border-gray-200 pt-2 mt-2">
                 <p className="text-sm font-medium text-gray-500 mb-2">More</p>
                 <a href="https://developers.mediloop.co" target="_blank" rel="noopener noreferrer" className="block py-1 text-gray-700 hover:text-gray-900">Developer Portal</a>
                 <a href="https://docs.mediloop.co" target="_blank" rel="noopener noreferrer" className="block py-1 text-gray-700 hover:text-gray-900">API Documentation</a>
-                <a href="/team" className="block py-1 text-gray-700 hover:text-gray-900">Team</a>
-                <a href="/blog" className="block py-1 text-gray-700 hover:text-gray-900">Blog</a>
-                <a href="/careers" className="block py-1 text-gray-700 hover:text-gray-900">Careers</a>
-                <a href="/press" className="block py-1 text-gray-700 hover:text-gray-900">Press</a>
-                <a href="/contact" className="block py-1 text-gray-700 hover:text-gray-900">Contact</a>
+                <Link href="/team" className="block py-1 text-gray-700 hover:text-gray-900">Team</Link>
+                <Link href="/blog" className="block py-1 text-gray-700 hover:text-gray-900">Blog</Link>
+                <Link href="/careers" className="block py-1 text-gray-700 hover:text-gray-900">Careers</Link>
+                <Link href="/press" className="block py-1 text-gray-700 hover:text-gray-900">Press</Link>
+                <Link href="/contact" className="block py-1 text-gray-700 hover:text-gray-900">Contact</Link>
               </div>
             </div>
           </div>
